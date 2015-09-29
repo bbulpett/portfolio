@@ -217,8 +217,8 @@ background: transparent;
 }
 
 .pagedown-marker {
-	position: fixed;
-	bottom: 0;
+	position: absolute;
+	bottom: 5%;
 	text-align: center;
 	margin-left: -20px;
 	color: rgba(255,255,255,0.3);
