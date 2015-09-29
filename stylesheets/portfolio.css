@@ -215,8 +215,28 @@ background: transparent;
 	display: inline-block;
 	padding: 5px 20px 0 0;
 }
+
+.pagedown-marker {
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	margin-left: -20px;
+	color: rgba(255,255,255,0.3);
+	z-index: 100;
+}
+
+@media screen and (max-height: 674px) {
+	.pagedown-marker {
+		visibility: hidden;
+	}
+}
+
 /*** Smartphone width optimization - iPhone4 is 320px, LG Optimus is 384px ***/
 @media screen and (max-width: 385px) {
+	.pagedown-marker {
+		visibility: hidden;
+	}
+
 	#avatar {
 		max-width: 150px !important;
 		max-height: 150px !important;
